@@ -1,8 +1,11 @@
-authorizedkeys:
-  image: jshmrtn/sshconfig
+sshconfig:
+  image: 'jshmrtn/dockercloud-sshconfig:0.0.7'
+  net: 'host'
+  privileged: true
   deployment_strategy: every_node
-  autodestroy: always
   environment:
+    - 'SSH_DEFAULT_PORT=22'
     - 'SSH_PORT=2222'
   volumes:
-    - /etc/ssh:/etc/ssh:rw
+    - /etc/ssh:/etc/ssh
+    - /etc/init.d:/etc/init.d

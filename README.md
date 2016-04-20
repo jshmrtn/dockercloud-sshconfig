@@ -15,7 +15,7 @@ We recommend using this image in Docker Cloud as follows:
     sshconfig:
       image: jshmrtn/sshconfig
       deployment_strategy: every_node
-      autodestroy: always
+      autodestroy: no
       environment:
         - SSH_PORT=2222
       volumes:

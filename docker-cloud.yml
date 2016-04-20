@@ -1,5 +1,5 @@
 sshconfig:
-  image: 'jshmrtn/dockercloud-sshconfig:0.0.7'
+  image: 'jshmrtn/dockercloud-sshconfig:0.0.8'
   net: 'host'
   privileged: true
   deployment_strategy: every_node

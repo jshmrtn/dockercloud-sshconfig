@@ -1,0 +1,8 @@
+authorizedkeys:
+  image: jshmrtn/sshconfig
+  deployment_strategy: every_node
+  autodestroy: always
+  environment:
+    - 'SSH_PORT=2222'
+  volumes:
+    - /etc/ssh:/etc/ssh:rw
